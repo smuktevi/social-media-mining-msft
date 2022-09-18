@@ -4,7 +4,7 @@
 [![MIT License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/reddit-conflicting-viewpoints/Reddit/blob/main/LICENSE)
 
 <p align="center">
-  <img src="https://github.com/reddit-conflicting-viewpoints/Reddit/blob/main/assets/logo.png" />
+  <img src="https://github.com/smuktevi/social-media-mining-msft/blob/main/assets/logo.png" />
 </p>
 
 ### This project was forked from my original capstone project. The following names are the initial contributors for my capstone: 
