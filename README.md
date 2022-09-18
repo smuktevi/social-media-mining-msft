@@ -1,19 +1,14 @@
-# Topic-Sentiment Analysis and Relevance System (TSAR) - BEReddiT
-![Heroku](https://heroku-status-badges.herokuapp.com/bereddit-dash)
+# Listening to Public Customer Voice using Social Media Mining for Microsoft Products 
+
 ![Python](https://img.shields.io/badge/python-v3.7.12-blue)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/reddit-conflicting-viewpoints/Reddit/blob/main/LICENSE)
 
 <p align="center">
-  <img src="https://github.com/reddit-conflicting-viewpoints/Reddit/blob/main/assets/bereddit-logo.png" />
+  <img src="https://github.com/reddit-conflicting-viewpoints/Reddit/blob/main/assets/logo.png" />
 </p>
 
-**By: Andrew Zhou, Sai Muktevi, Preston Stringham, Hasnah Said**
-
-Web Visualization Dashboard is deployed on [appspot](https://bereddit-tsar.wl.r.appspot.com/) and [heroku](http://bereddit-dash.herokuapp.com/).
-
-**Project Poster and Flyer**  
-Project Poster can be found [here](https://github.com/reddit-conflicting-viewpoints/Reddit/blob/main/reports/TSAR_POSTER.pdf).  
-Project Flyer can be found [here](https://github.com/reddit-conflicting-viewpoints/Reddit/blob/main/reports/Flyer.pdf).  
+### This project was forked from my original capstone project. The following names are the initial contributors for my capstone: 
+### **Andrew Zhou, Preston Stringham, Hasnah Said**
 
 ## Introduction
 
@@ -93,16 +88,3 @@ python src/data/scraper.py
 Recommended running `python src/data/scraper.py` as this allows argument parsing.  
 
 Files will be downloaded to data/raw/.
-
-### Syncing your data to azure blob
-```
-make sync_data_to_blob
-```
-Files in data/ will be synced to azure blob.
-
-### Syncing your data from azure blob
-```
-make sync_data_from_blob
-```
-Fetch files in azure blob to your local machine. Note: If you have a file with the same name on azure blob, those files will not sync.  
-Example: computerscience_comments.csv is on your local machine, and a new version of computerscience_comments.csv is on azure blob. The new version of computerscience_comments.csv on azure blob will not replace the local copy. 
