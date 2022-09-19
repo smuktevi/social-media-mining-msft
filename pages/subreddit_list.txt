@@ -6,3 +6,4 @@ chrome
 chromium
 firefox
 xbox
+windows
