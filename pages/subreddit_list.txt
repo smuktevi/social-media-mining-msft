@@ -7,3 +7,5 @@ chromium
 firefox
 xbox
 windows
+microsotteams
+Minecraft
