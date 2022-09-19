@@ -3,8 +3,8 @@
 ![Python](https://img.shields.io/badge/python-v3.7.12-blue)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/reddit-conflicting-viewpoints/Reddit/blob/main/LICENSE)
 
-This builds off of my capstone project work that was originally contributed to **By: Andrew Zhou, Sai Muktevi, Preston Stringham, Hasnah Said**.
-Thank you for the push!
+This builds off of my capstone project work that was originally contributed to **By: Andrew Zhou, Preston Stringham, Hasnah Said**.
+Thank you for the push! - Sai Muktevi
 
 <p align="center">
   <img src="https://github.com/smuktevi/social-media-mining-msft/blob/main/assets/logo.png" />
