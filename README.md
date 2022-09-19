@@ -7,7 +7,7 @@ This builds off of my capstone project work that was originally contributed to *
 Thank you for the push! - Sai Muktevi
 
 <p align="center">
-  <img src="https://github.com/smuktevi/social-media-mining-msft/blob/main/assets/logo.png" />
+  <img src="https://github.com/smuktevi/social-media-mining-msft/blob/main/logo.png" />
 </p>
 
 ## Introduction
