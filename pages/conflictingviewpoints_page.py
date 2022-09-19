@@ -16,7 +16,7 @@ TEXT_STYLE = {
 }
 
 layout =html.Div([
-            html.H1('Topics of Conflicting Viewpoints',style={'textAlign':'center'}),
+            html.H1('Conflicting Viewpoints',style={'textAlign':'center'}),
             html.Div([
                 html.H3("Identifying Conflict, Influence and Polarizing Views", className="display-6 text-center"),
                 html.P(id='conflictprinter',className='fs-4 text-center'),
@@ -71,7 +71,7 @@ def update_graph(data):
         cols = ['comment_topics', 'comment_relevance_mean', 'comment_relevance_size', 'sentiment_diff_mean', 'sentiment_diff_size']
         fig1_df.columns = cols
         fig1_df['comment_topics'] = fig1_df['comment_topics'].apply(lambda s: ' '.join(s.split('_')[1:]))
-        controversy_relevance_plot = cv_plot('scatter', fig1_df[1:], x_col='comment_relevance_mean', y_col='sentiment_diff_mean', size='sentiment_diff_size', title='Topics of Conflicting Viewpoints in r/'+subreddit,
+        controversy_relevance_plot = cv_plot('scatter', fig1_df[1:], x_col='comment_relevance_mean', y_col='sentiment_diff_mean', size='sentiment_diff_size', title='Conflicting Viewpoints in r/'+subreddit,
                                              hover_name='comment_topics', 
                                              labels={
                                                  "sentiment_diff_mean": "Average Controversy",
@@ -79,7 +79,7 @@ def update_graph(data):
                                                  "sentiment_diff_size": "Number of Comments"
                                              })
 
-        return f'We used posts and comments sentiment scores as well as their relevance scores to identify topics of conflicting viewpoints in r/{subreddit}.', controversy_relevance_plot
+        return f'We used posts and comments sentiment scores as well as their relevance scores to identify conflicting viewpoints in r/{subreddit}.', controversy_relevance_plot
     except KeyError as e:
         print(e)
         return 'No data loaded! Go to Home Page first!', {}

@@ -234,7 +234,7 @@ class BertModels:
         print("Updating topic model with reduced topics set.")
         self.model.update_topics(self.docs, self.topics, n_gram_range=(1, 3))
 
-        print('Reduced topic distributions:')
+        # print('Reduced topic distributions:')
         # fig = self.model.visualize_barchart(top_n_topics=10)
         # fig.show()
 

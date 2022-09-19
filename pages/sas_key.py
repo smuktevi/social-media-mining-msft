@@ -3,19 +3,18 @@ import numpy as np
 from pandas.errors import ParserError
 
 AZURE_URL = "https://redditconflict.blob.core.windows.net/redditconflict/results/"
-
-# SAS_KEY = "?sp=r&st=2022-03-06T23:29:32Z&se=2023-01-01T07:29:32Z&sv=2020-08-04&sr=c&sig=%2FGHaPmXaEBpc36JBlYfMJLPE8dYr5cFcAsbPpjV16NA%3D"
-SAS_KEY = "?sp=racwdli&st=2022-08-15T03:45:10Z&se=2022-12-31T12:45:10Z&spr=https&sv=2021-06-08&sr=c&sig=dAykwAwvifeG9Bh5pinG6cGLYtz5ky0wJKCo48ElDA4%3D"
+SAS_KEY = "?sp=r&st=2022-03-06T23:29:32Z&se=2023-01-01T07:29:32Z&sv=2020-08-04&sr=c&sig=%2FGHaPmXaEBpc36JBlYfMJLPE8dYr5cFcAsbPpjV16NA%3D"
 
 def get_csv_url(subreddit, sort_order='hot', results=True):
-    local = "/Users/saimuktevi/Documents/UW/Capstone/Reddit/data/results/"
+    local = "C:/Users/vmuktevi/Documents/Project/SocialMediaMining/Reddit/data/results/"
     if results:
-    #     return local + subreddit + "_" + sort_order + "_results.csv"
-    # else:
-    #     return local + subreddit + "_" + sort_order + "_subreddit.csv"
-        return AZURE_URL + subreddit + "_" + sort_order + "_results.csv" + SAS_KEY
+        return local + subreddit + "_" + sort_order + "_results.csv"
     else:
-        return AZURE_URL + subreddit + "_" + sort_order + "_subreddit.csv" + SAS_KEY
+        return local + subreddit + "_" + sort_order + "_subreddit.csv"
+    # if results:  
+    #     return AZURE_URL + subreddit + "_" + sort_order + "_results.csv" + SAS_KEY
+    # else:
+    #     return AZURE_URL + subreddit + "_" + sort_order + "_subreddit.csv" + SAS_KEY
 
 def get_df(subreddit, sort_order='hot'):
     dtypess ={
@@ -65,5 +64,6 @@ def get_df_description(subreddit, sort_order='hot'):
     try:
         df = pd.read_csv(get_csv_url(subreddit, sort_order, False))
     except ParserError:
+        # print('ERROR: File Not Read')
         df = pd.read_csv(get_csv_url(subreddit, sort_order, False), lineterminator='\n')
     return df

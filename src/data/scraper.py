@@ -8,7 +8,6 @@ import pandas as pd
 import numpy as np
 from dataclasses import dataclass, field
 from typing import List
-
 from src.utils import get_project_root
 from contextlib import asynccontextmanager
 from config import ScraperConfig, default_config

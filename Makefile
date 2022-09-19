@@ -40,9 +40,7 @@ lint:
 
 ## Upload Data to S3
 sync_data_to_blob:
-	azcopy sync 'data/' 'https://redditconflict.blob.core.windows.net/redditconflict/?sp=racwdli&st=2022-08-15T03:45:10Z&se=2022-12-31T12:45:10Z&spr=https&sv=2021-06-08&sr=c&sig=dAykwAwvifeG9Bh5pinG6cGLYtz5ky0wJKCo48ElDA4%3D'
-	# azcopy sync 'data/' 'https://redditconflict.blob.core.windows.net/redditconflict/?sv=2020-08-04&ss=bfqt&srt=sco&sp=rwdlacupitfx&se=2022-04-01T02:47:19Z&st=2022-01-29T19:47:19Z&spr=https&sig=CzbK3oh1Lyv%2BrFf7tjw%2F3AhcltmpTL4VkImMas%2FykfA%3D'
-
+	azcopy sync 'data/' 'https://redditconflict.blob.core.windows.net/redditconflict/?sv=2020-08-04&ss=bfqt&srt=sco&sp=rwdlacupitfx&se=2022-04-01T02:47:19Z&st=2022-01-29T19:47:19Z&spr=https&sig=CzbK3oh1Lyv%2BrFf7tjw%2F3AhcltmpTL4VkImMas%2FykfA%3D'
 # ifeq (default,$(PROFILE))
 # 	aws s3 sync data/ s3://$(BUCKET)/data/
 # else
@@ -51,8 +49,7 @@ sync_data_to_blob:
 
 ## Download Data from S3
 sync_data_from_blob:
-	azcopy sync 'https://redditconflict.blob.core.windows.net/redditconflict/?sp=racwdli&st=2022-08-15T03:45:10Z&se=2022-12-31T12:45:10Z&spr=https&sv=2021-06-08&sr=c&sig=dAykwAwvifeG9Bh5pinG6cGLYtz5ky0wJKCo48ElDA4%3D' 'data/'
-	# azcopy sync 'https://redditconflict.blob.core.windows.net/redditconflict/?sv=2020-08-04&ss=bfqt&srt=sco&sp=rwdlacupitfx&se=2022-04-01T02:47:19Z&st=2022-01-29T19:47:19Z&spr=https&sig=CzbK3oh1Lyv%2BrFf7tjw%2F3AhcltmpTL4VkImMas%2FykfA%3D' 'data/'
+	azcopy sync 'https://redditconflict.blob.core.windows.net/redditconflict/?sv=2020-08-04&ss=bfqt&srt=sco&sp=rwdlacupitfx&se=2022-04-01T02:47:19Z&st=2022-01-29T19:47:19Z&spr=https&sig=CzbK3oh1Lyv%2BrFf7tjw%2F3AhcltmpTL4VkImMas%2FykfA%3D' 'data/'
 # ifeq (default,$(PROFILE))
 # 	aws s3 sync s3://$(BUCKET)/data/ data/
 # else

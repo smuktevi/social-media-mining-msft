@@ -72,7 +72,7 @@ def update_graph(data):
         subreddit = df.at[0, 'subreddit']
         
         # Topic modeling for posts
-        post_df = df[['post_topics', 'post_id']].drop_duplicates().reset_index(drop=True).groupby('post_topics', as_index=False).count()
+        post_df = df[['post_topics', 'post_id']].groupby('post_topics', as_index=False).count()
         post_df = post_df[~post_df['post_topics'].str.startswith('-1')]
         post_df['post_topics'] = post_df['post_topics'].apply(lambda s: ' '.join(s.split('_')[1:]))
         post_topics_fig = px.bar(post_df[:15],
