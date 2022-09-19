@@ -1,4 +1,4 @@
-# Topic-Sentiment Analysis and Relevance System (TSAR) - BEReddiT
+# Listening to Public Customer Voice using Social Media Mining across Microsoft Products
 
 ![Python](https://img.shields.io/badge/python-v3.7.12-blue)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/reddit-conflicting-viewpoints/Reddit/blob/main/LICENSE)
