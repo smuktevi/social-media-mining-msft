@@ -1,19 +1,14 @@
 # Topic-Sentiment Analysis and Relevance System (TSAR) - BEReddiT
-![Heroku](https://heroku-status-badges.herokuapp.com/bereddit-dash)
+
 ![Python](https://img.shields.io/badge/python-v3.7.12-blue)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/reddit-conflicting-viewpoints/Reddit/blob/main/LICENSE)
 
+This builds off of my capstone project work that was originally contributed to **By: Andrew Zhou, Sai Muktevi, Preston Stringham, Hasnah Said**.
+Thank you for the push!
+
 <p align="center">
-  <img src="https://github.com/reddit-conflicting-viewpoints/Reddit/blob/main/assets/bereddit-logo.png" />
+  <img src="https://github.com/smuktevi/social-media-mining-msft/blob/main/assets/logo.png" />
 </p>
-
-**By: Andrew Zhou, Sai Muktevi, Preston Stringham, Hasnah Said**
-
-Web Visualization Dashboard is deployed on [appspot](https://bereddit-tsar.wl.r.appspot.com/) and [heroku](http://bereddit-dash.herokuapp.com/).
-
-**Project Poster and Flyer**  
-Project Poster can be found [here](https://github.com/reddit-conflicting-viewpoints/Reddit/blob/main/reports/TSAR_POSTER.pdf).  
-Project Flyer can be found [here](https://github.com/reddit-conflicting-viewpoints/Reddit/blob/main/reports/Flyer.pdf).  
 
 ## Introduction
 
