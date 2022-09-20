@@ -66,9 +66,9 @@ with open('pages/fig.json', 'r') as f:
 
 sidebar = html.Div(
     [
-        html.Img(src='/assets/bereddit-logo.png', style={'width':'100%'}),
+        html.Img(src='/assets/logo.png', style={'width':'100%'}),
         html.P(
-            "BEReddiT", className="display-5 text-center"
+            "PCV: Reddit", className="display-5 text-center"
         ),
         dbc.Nav(
             [
